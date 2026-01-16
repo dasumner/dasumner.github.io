@@ -107,7 +107,7 @@ const IndexPage = () => {
         
         <div className="container">
           <div className="hero-content">
-            <div className="hero-badge">SEEKING CTO OPPORTUNITIES</div>
+            <div className="hero-badge">SEEKING TECHNICAL LEADERSHIP OPPORTUNITIES</div>
             <h1 className="hero-title">
               <span className="title-line">Building Resilient</span>
               <span className="title-line accent">Infrastructure</span>
@@ -252,7 +252,7 @@ const IndexPage = () => {
           <div className="connect-content">
             <h2>Let's Build Something That Matters</h2>
             <p>
-              Looking for a CTO who combines deep technical expertise with 
+              Looking for an experienced technical leader who combines deep technical expertise with 
               mission-driven leadership? Let's discuss how we can create 
               resilient, impactful technology together.
             </p>

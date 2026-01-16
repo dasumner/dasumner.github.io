@@ -13,8 +13,8 @@ A distinctive Gatsby-powered portfolio website showcasing executive technology l
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/[your-username]/dave-portfolio.git
-cd dave-portfolio
+git clone https://github.com/[your-username]/dasumner.github.io.git
+cd dasumner.github.io
 ```
 
 2. **Install dependencies**
@@ -34,7 +34,7 @@ Your site is now running at `http://localhost:8000`
 ### Method 1: Automated Deployment with GitHub Actions
 
 1. **Create GitHub Repository**
-   - Go to GitHub and create a new repository named `dave-portfolio`
+   - Go to GitHub and create a new repository named `dasumner.github.io`
    - Keep it public for GitHub Pages
 
 2. **Create GitHub Actions Workflow**
@@ -109,7 +109,7 @@ npm run deploy
 git init
 git add .
 git commit -m "Initial commit"
-git remote add origin https://github.com/[your-username]/dave-portfolio.git
+git remote add origin https://github.com/[your-username]/dasumner.github.io.git
 git push -u origin main
 ```
 
