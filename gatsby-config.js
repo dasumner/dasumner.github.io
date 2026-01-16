@@ -6,7 +6,7 @@ module.exports = {
     title: `Dave - Executive Technology Leadership`,
     description: `CTO | DevOps Leader | Mission-Driven Technologist`,
     author: `Dave`,
-    siteUrl: `https://dave-portfolio.github.io`
+    siteUrl: `https://dasumner.github.io`
   },
   plugins: [
     `gatsby-plugin-react-helmet`
