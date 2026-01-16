@@ -130,7 +130,7 @@ Edit `src/pages/index.js` to update:
 - Metrics and achievements
 - Expertise areas
 - Current work projects
-- Contact information.
+- Contact information
 
 ### Styling
 
