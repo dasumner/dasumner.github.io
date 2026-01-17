@@ -45,6 +45,10 @@ const IndexPage = () => {
     {
       category: "Strategic Leadership",
       items: ["Multi-Vendor Coordination", "Digital Transformation", "Crisis Response Systems", "Community Resilience"]
+    },
+    {
+      category: "Training & Mentorship",
+      items: ["AI Strategy", "Open Source Procurement", "Technical Upskilling", "Cybersecurity Leadership"]
     }
   ]
 
@@ -107,7 +111,7 @@ const IndexPage = () => {
         
         <div className="container">
           <div className="hero-content">
-            <div className="hero-badge">SEEKING TECHNICAL LEADERSHIP OPPORTUNITIES</div>
+            <div className="hero-badge">EXPERIENCED TECHNICAL LEADERSHIP</div>
             <h1 className="hero-title">
               <span className="title-line">Building Resilient</span>
               <span className="title-line accent">Infrastructure</span>
