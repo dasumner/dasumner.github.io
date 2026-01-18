@@ -60,7 +60,7 @@ const IndexPage = () => {
     },
     {
       title: "AI Policy Framework",
-      description: "Training Federal procurement officers on the development of best practice models for acquisition of AI technologies",
+      description: "Training federal procurement officers on AI and open source software acquisition, evaluation, and ethics",
       tech: "Policy Design, Compliance, Ethics"
     },
     {
