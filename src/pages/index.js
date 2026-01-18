@@ -54,9 +54,9 @@ const IndexPage = () => {
 
   const currentWork = [
     {
-      title: "Relief Logistics Platform",
-      description: "Building next-generation supply chain technology for emergency response agencies",
-      tech: "AWS, Python, Kubernetes"
+      title: "Observability Transformation",
+      description: "Leading proactive monitoring strategy improvements for healthcare applications serving 150M Americans",
+      tech: "New Relic, Datadog, Splunk ITSI, Multi-Vendor Coordination"
     },
     {
       title: "AI Policy Framework",
