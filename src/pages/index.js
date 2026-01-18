@@ -238,6 +238,16 @@ const IndexPage = () => {
                   from educational AI governance to digital response initiatives.
                 </p>
               </div>
+
+              <div className="mission-card">
+                <div className="mission-icon">📚</div>
+                <h3>Educational Access</h3>
+                <p>
+                  For 20 years at Oracle, built global learning infrastructure enabling 
+                  thousands of students worldwide to access technical education - from 
+                  Oracle classrooms to community colleges to distance learning programs.
+                </p>
+              </div>
             </div>
 
             <div className="vision-statement">
