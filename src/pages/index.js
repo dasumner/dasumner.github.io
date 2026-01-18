@@ -60,8 +60,8 @@ const IndexPage = () => {
     },
     {
       title: "AI Policy Framework",
-      description: "Developing governance models for educational institutions with US Digital Response",
-      tech: "Policy Design, Compliance Automation"
+      description: "Training Federal procurement officers on the development of best practice models for acquisition of AI technologies",
+      tech: "Policy Design, Compliance, Ethics"
     },
     {
       title: "Infrastructure Modernization",
