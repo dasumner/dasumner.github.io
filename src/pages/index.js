@@ -287,8 +287,8 @@ const IndexPage = () => {
                 <h3>Recent Engagements</h3>
                 <ul>
                   <li>CivicActions - DevOps Leadership</li>
-                  <li>US Digital Response - AI Policy</li>
-                  <li>Harris County DoE - Compliance</li>
+                  <li>US Digital Response - Workforce Assessment Automation</li>
+                  <li>Harris County DoE - AI Policy Development</li>
                   <li>Federal Healthcare Platforms</li>
                   <li>Relief Logistics Technology</li>
                 </ul>
