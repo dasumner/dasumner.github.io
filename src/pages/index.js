@@ -73,7 +73,7 @@ const IndexPage = () => {
   return (
     <>
       <Helmet>
-        <title>Dave - Executive Technology Leadership</title>
+        <title>David Sumner - Executive Technology Leadership</title>
         <meta name="description" content="CTO | DevOps Leader | Mission-Driven Technologist" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
@@ -84,8 +84,8 @@ const IndexPage = () => {
       <nav className="navigation">
         <div className="nav-inner">
           <div className="nav-logo">
-            <span className="logo-text">DAVE</span>
-            <span className="logo-subtitle">DEVOPS</span>
+            <span className="logo-text">DAVID</span>
+            <span className="logo-subtitle">SUMNER</span>
           </div>
           <div className="nav-links">
             {['impact', 'expertise', 'mission', 'connect'].map((section) => (
@@ -296,13 +296,13 @@ const IndexPage = () => {
             </div>
             
             <div className="connect-actions">
-              <a href="mailto:dave@example.com" className="btn btn-primary">
+              <a href="mailto:iamdavesumner@proton.me" className="btn btn-primary">
                 <span>Email Directly</span>
                 <svg className="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                   <path d="M7 17L17 7M17 7H7M17 7V17" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </a>
-              <a href="https://linkedin.com/in/dave" className="btn btn-secondary">
+              <a href="https://linkedin.com/in/davidasumner" className="btn btn-secondary">
                 <span>LinkedIn Profile</span>
               </a>
             </div>
@@ -315,7 +315,7 @@ const IndexPage = () => {
         <div className="container">
           <div className="footer-content">
             <div className="footer-left">
-              <span>© 2025 Dave</span>
+              <span>© 2025 David Sumner</span>
               <span className="footer-divider">•</span>
               <span>Houston, TX</span>
             </div>
