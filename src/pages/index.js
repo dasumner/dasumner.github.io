@@ -44,7 +44,7 @@ const IndexPage = () => {
     },
     {
       category: "Strategic Leadership",
-      items: ["Multi-Vendor Coordination", "Digital Transformation", "Crisis Response Systems", "Community Resilience"]
+      items: ["Multi-Vendor Coordination", "Digital Transformation", "MSP Selection & Strategy", "Technical Contract Validation", "Crisis Response Systems", "Community Resilience"]
     },
     {
       category: "Training & Mentorship",
@@ -67,7 +67,12 @@ const IndexPage = () => {
       title: "Infrastructure Modernization",
       description: "Leading container orchestration migration for enterprise CI/CD pipelines",
       tech: "Docker, Kubernetes, Jenkins"
-    }
+    },
+    {
+      title: "Strategic MSP Advisory",
+      description: "Evaluated 6 MSP proposals for a multi-office law firm (DC, NY, SF), normalizing complex bids and architecting the transition roadmap.",
+      tech: "Vendor Analysis, IT Governance, Multi-State Infrastructure"
+}
   ]
 
   return (
@@ -286,6 +291,7 @@ const IndexPage = () => {
               <div className="connect-card">
                 <h3>Recent Engagements</h3>
                 <ul>
+                  <li>Legal Sector - MSP Strategic Selection</li>
                   <li>CivicActions - DevOps Leadership</li>
                   <li>US Digital Response - Workforce Assessment Automation</li>
                   <li>Harris County DoE - AI Policy Development</li>
