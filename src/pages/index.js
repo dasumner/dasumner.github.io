@@ -68,15 +68,15 @@ const IndexPage = () => {
       ],
       tech: "Amazon Bedrock · LLM Extraction · Skills Ontology · Workforce Analytics",
       theme: "Organizations are information-rich. The gap is insight."
-    }
+    },
     {
       id: "02",
       label: "STRATEGIC VENDOR SELECTION",
       client: "Multi-Office Law Firm (DC · NY · SF)",
       title: "Cutting Through Six MSP Proposals to Find the Right Partner for a 40-Person Firm",
-      challenge: "A 50-person litigation firm operating across three major markets had outgrown its incumbent IT provider — a vendor with deep political ties to firm leadership but a documented security failure and premium pricing that couldn't be justified. The firm needed to evaluate six competing managed service providers, but each proposal used different pricing structures, different SLA definitions, and different assumptions about scope. Comparing them directly was like comparing six different languages.",
-      approach: "Built a structured evaluation framework from the ground up: a weighted scoring matrix spanning security posture, unified communications, compliance readiness, service desk coverage, and total cost of ownership. Each vendor's proposal was normalized against the same criteria regardless of how they chose to present it. SOC 2 certifications were independently verified. Risk and cost tradeoffs were modeled visually so firm leadership could see where the gaps were — not just who scored highest, but why. Vendor write-ups were produced for each of the six finalists, and a full transition roadmap with IT recruitment advisory was delivered alongside.",
-      outcome: "Two vendors emerged as clear finalists — differentiated not just on price but on security maturity and cultural fit for a firm operating in sensitive litigation environments. Leadership had a defensible, documented rationale for their selection, independent of the incumbent relationship. The engagement also surfaced an IT staffing gap the firm hadn't previously scoped, expanding the advisory into recruitment strategy.",
+      challenge: "A 50-person litigation firm operating across three major markets had outgrown its incumbent IT provider, a vendor with deep political ties to firm leadership but a documented security failure and premium pricing that couldn't be justified. The firm needed to evaluate six competing managed service providers, but each proposal used different pricing structures, different SLA definitions, and different assumptions about scope. Comparing them directly was like comparing six different languages.",
+      approach: "Built a structured evaluation framework from the ground up: a weighted scoring matrix spanning security posture, unified communications, compliance readiness, service desk coverage, and total cost of ownership. Each vendor's proposal was normalized against the same criteria regardless of how they chose to present it. SOC 2 certifications were independently verified. Risk and cost tradeoffs were modeled visually so firm leadership could see where the gaps were, not just who scored highest, but why. Vendor write-ups were produced for each of the six finalists, and a full transition roadmap with IT recruitment advisory was delivered alongside.",
+      outcome: "Two vendors emerged as clear finalists, differentiated not just on price but on security maturity and cultural fit for a firm operating in sensitive litigation environments. Leadership had a defensible, documented rationale for their selection, independent of the incumbent relationship. The engagement also surfaced an IT staffing gap the firm hadn't previously scoped, expanding the advisory into recruitment strategy.",
       metrics: [
         { value: "6", label: "Vendors Evaluated" },
         { value: "3", label: "Markets (DC · NY · SF)" },
@@ -151,16 +151,17 @@ const IndexPage = () => {
         
         <div className="container">
           <div className="hero-content">
-            <div className="hero-badge">EXPERIENCED TECHNICAL LEADERSHIP</div>
+            <div className="hero-badge">FROM DATA TO DECISIONS</div>
             <h1 className="hero-title">
-              <span className="title-line">Building Resilient</span>
-              <span className="title-line accent">Infrastructure</span>
-              <span className="title-line">For Human Impact</span>
+              <span className="title-line">Organizations Are</span>
+              <span className="title-line accent">Information-Rich.</span>
+              <span className="title-line">Let's Fix the Gap.</span>
             </h1>
             <p className="hero-description">
-              Assistant Director of DevOps at CivicActions, orchestrating federal healthcare systems 
-              that serve millions. 25+ years transforming technology into mission-critical solutions
-              for communities and organizations that matter.
+              25+ years leading technology across global enterprise and public sector: from Oracle's 
+              worldwide infrastructure to federal healthcare platforms serving 150 million Americans. 
+              Now applying AI and systems thinking to help mission-driven organizations convert 
+              complexity into strategic clarity.
             </p>
             <div className="hero-actions">
               <a href="#connect" className="btn btn-primary">
@@ -426,7 +427,7 @@ const IndexPage = () => {
               <span>Houston, TX</span>
             </div>
             <div className="footer-right">
-              <span>Building Infrastructure for Human Impact</span>
+              <span>From Data to Decisions</span>
             </div>
           </div>
         </div>
