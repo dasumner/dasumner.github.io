@@ -10,7 +10,7 @@ const IndexPage = () => {
     const handleScroll = () => {
       setScrollY(window.scrollY)
       
-      const sections = ['hero', 'impact', 'expertise', 'mission', 'connect']
+      const sections = ['hero', 'impact', 'expertise', 'cases', 'mission', 'connect']
       const current = sections.find(section => {
         const element = document.getElementById(section)
         if (element) {
@@ -49,6 +49,25 @@ const IndexPage = () => {
     {
       category: "Training & Mentorship",
       items: ["AI Strategy", "Open Source Procurement", "Technical Upskilling", "Cybersecurity Leadership"]
+    }
+  ]
+
+  const caseStudies = [
+    {
+      id: "01",
+      label: "AI-POWERED WORKFORCE INTELLIGENCE",
+      client: "Major Municipal Housing Authority",
+      title: "Turning Hundreds of Job Descriptions Into a Living Skills Database",
+      challenge: "A large municipal housing agency had accumulated hundreds of job descriptions authored by dozens of independent offices over more than a decade. Each was written in isolation — different terminology, different skill frameworks, no shared taxonomy. With a major enterprise technology migration on the horizon, leadership had no reliable way to assess workforce readiness. The data existed. The insight did not.",
+      approach: "Designed and deployed an Amazon Bedrock pipeline that ingested the full corpus of job descriptions and applied large language models to extract, normalize, and cluster skills at scale. Disparate job titles, inconsistent competency language, and redundant role definitions were resolved into a unified, queryable skills database — capturing both technical and functional competencies across the organization.",
+      outcome: "The resulting skills database gave agency leadership a clear, defensible picture of workforce readiness: which employees were prepared for the technology migration and which required targeted upskilling. What had been an information management problem became a strategic planning asset.",
+      metrics: [
+        { value: "Hundreds", label: "Job Descriptions Processed" },
+        { value: "Single", label: "Unified Skills Taxonomy" },
+        { value: "Binary", label: "Migration Readiness Signal" }
+      ],
+      tech: "Amazon Bedrock · LLM Extraction · Skills Ontology · Workforce Analytics",
+      theme: "Organizations are information-rich. The gap is insight."
     }
   ]
 
@@ -93,13 +112,13 @@ const IndexPage = () => {
             <span className="logo-subtitle">SUMNER</span>
           </div>
           <div className="nav-links">
-            {['impact', 'expertise', 'mission', 'connect'].map((section) => (
+            {['impact', 'expertise', 'cases', 'mission', 'connect'].map((section) => (
               <a 
                 key={section}
                 href={`#${section}`}
                 className={activeSection === section ? 'active' : ''}
               >
-                {section.charAt(0).toUpperCase() + section.slice(1)}
+                {section === 'cases' ? 'Case Studies' : section.charAt(0).toUpperCase() + section.slice(1)}
               </a>
             ))}
           </div>
@@ -204,6 +223,71 @@ const IndexPage = () => {
               ))}
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Case Studies Section */}
+      <section id="cases" className="cases-section">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-label">FIELD WORK</span>
+            <h2>Case Studies</h2>
+          </div>
+
+          {caseStudies.map((study) => (
+            <div key={study.id} className="case-study">
+              <div className="case-study-header">
+                <div className="case-number">{study.id}</div>
+                <div className="case-meta">
+                  <span className="case-label">{study.label}</span>
+                  <span className="case-client">{study.client}</span>
+                </div>
+              </div>
+
+              <h3 className="case-title">{study.title}</h3>
+
+              <div className="case-body">
+                <div className="case-narrative">
+                  <div className="case-block">
+                    <div className="case-block-label">THE CHALLENGE</div>
+                    <p>{study.challenge}</p>
+                  </div>
+                  <div className="case-block">
+                    <div className="case-block-label">THE APPROACH</div>
+                    <p>{study.approach}</p>
+                  </div>
+                  <div className="case-block">
+                    <div className="case-block-label">THE OUTCOME</div>
+                    <p>{study.outcome}</p>
+                  </div>
+                </div>
+
+                <div className="case-sidebar">
+                  <div className="case-metrics">
+                    {study.metrics.map((m, i) => (
+                      <div key={i} className="case-metric">
+                        <div className="case-metric-value">{m.value}</div>
+                        <div className="case-metric-label">{m.label}</div>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="case-tech">
+                    <div className="case-block-label">TOOLS & METHODS</div>
+                    <div className="case-tech-tags">
+                      {study.tech.split(' · ').map((tag, i) => (
+                        <span key={i} className="tech-tag">{tag}</span>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="case-theme">
+                    <div className="case-theme-quote">"{study.theme}"</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
