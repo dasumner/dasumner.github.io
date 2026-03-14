@@ -64,7 +64,7 @@ const IndexPage = () => {
       metrics: [
         { value: "Hundreds", label: "Job Descriptions Processed" },
         { value: "Single", label: "Unified Skills Taxonomy" },
-        { value: "Binary", label: "Migration Readiness Signal" }
+        { value: "Actionable", label: "Readiness Score For Every Employee" }
       ],
       tech: "Amazon Bedrock · LLM Extraction · Skills Ontology · Workforce Analytics",
       theme: "Organizations are information-rich. The gap is insight."
@@ -155,7 +155,7 @@ const IndexPage = () => {
             <h1 className="hero-title">
               <span className="title-line">Your Data Already</span>
               <span className="title-line">Has the Answers.</span>
-              <span className="title-line accent">Let's Find Them.</span>
+              <span className="title-line accent">We Help You Find Them.</span>
             </h1>
             <p className="hero-description">
               25+ years leading technology across global enterprise and public sector: from Oracle's 
@@ -358,8 +358,8 @@ const IndexPage = () => {
 
             <div className="vision-statement">
               <blockquote>
-                "The best technology disappears into the background, 
-                enabling humans to focus on what matters: serving each other."
+                "When it comes to data, complexity isn't the problem.
+                Clarity is."
               </blockquote>
             </div>
           </div>
