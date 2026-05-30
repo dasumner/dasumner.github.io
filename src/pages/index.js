@@ -35,20 +35,20 @@ const IndexPage = () => {
 
   const expertise = [
     {
-      category: "Federal & Civic Technology",
-      items: ["Healthcare.gov Operations", "Medicare.gov Architecture", "CMS.gov Infrastructure", "Mission-Critical Systems"]
+      category: "Enterprise & Regulated Platforms",
+      items: ["Healthcare.gov Operations", "Medicare.gov Architecture", "CMS.gov Infrastructure", "High-Availability Systems"]
     },
     {
-      category: "DevOps Excellence",
-      items: ["Container Orchestration", "CI/CD Pipeline Design", "Infrastructure as Code", "Site Reliability Engineering"]
+      category: "Cloud, DevOps & SRE",
+      items: ["AWS Cloud Infrastructure", "CI/CD Pipeline Engineering", "Site Reliability Engineering", "Production AI in Operations (Bedrock)"]
+    },
+    {
+      category: "Security & Compliance",
+      items: ["NIST 800-53 / FedRAMP / FISMA", "SOX-Equivalent Controls", "CISSP & CBCP Certified", "Cybersecurity Leadership"]
     },
     {
       category: "Strategic Leadership",
-      items: ["Multi-Vendor Coordination", "Digital Transformation", "MSP Selection & Strategy", "Technical Contract Validation", "Crisis Response Systems", "Community Resilience"]
-    },
-    {
-      category: "Training & Mentorship",
-      items: ["AI Strategy", "Open Source Procurement", "Technical Upskilling", "Cybersecurity Leadership"]
+      items: ["Multi-Vendor Orchestration", "Digital Transformation", "MSP Selection & Strategy", "$70M+ Contract Management", "Organizational Resilience (DR/BC)", "Executive Stakeholder Alignment"]
     }
   ]
 
@@ -94,9 +94,9 @@ const IndexPage = () => {
       tech: "New Relic, Datadog, Splunk ITSI, Multi-Vendor Coordination"
     },
     {
-      title: "AI Policy Framework",
-      description: "Training federal procurement officers on AI and open source software acquisition, evaluation, and ethics",
-      tech: "Policy Design, Compliance, Ethics"
+      title: "AI Governance & Adoption",
+      description: "Designing AI evaluation, acquisition, and ethics frameworks for large public-sector and enterprise technology programs",
+      tech: "AI Strategy, Governance, Compliance"
     },
     {
       title: "Infrastructure Modernization",
@@ -113,8 +113,8 @@ const IndexPage = () => {
   return (
     <>
       <Helmet>
-        <title>David Sumner - Executive Technology Leadership</title>
-        <meta name="description" content="CTO | DevOps Leader | Mission-Driven Technologist" />
+        <title>David Sumner — Technology Director | AI-Augmented IT Operations</title>
+        <meta name="description" content="IT Director | AI-Augmented Operations | FedRAMP & SOX-Grade Compliance | CISSP, CBCP" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -134,7 +134,7 @@ const IndexPage = () => {
                 href={`#${section}`}
                 className={activeSection === section ? 'active' : ''}
               >
-                {section === 'cases' ? 'Case Studies' : section.charAt(0).toUpperCase() + section.slice(1)}
+                {section === 'cases' ? 'Case Studies' : section === 'mission' ? 'At Scale' : section.charAt(0).toUpperCase() + section.slice(1)}
               </a>
             ))}
           </div>
@@ -151,27 +151,27 @@ const IndexPage = () => {
         
         <div className="container">
           <div className="hero-content">
-            <div className="hero-badge">FROM DATA TO DECISIONS</div>
+            <div className="hero-badge">ENTERPRISE IT OPERATIONS · RESILIENCE · AI</div>
             <h1 className="hero-title">
-              <span className="title-line">Your Data Already</span>
-              <span className="title-line">Has the Answers.</span>
-              <span className="title-line accent">We Help You Find Them.</span>
+              <span className="title-line">Enterprise IT Operations,</span>
+              <span className="title-line">Engineered for Resilience —</span>
+              <span className="title-line accent">and Built with Production AI.</span>
             </h1>
             <p className="hero-description">
-              25+ years leading technology across global enterprise and public sector: from Oracle's 
-              worldwide infrastructure to federal healthcare platforms serving 150 million Americans. 
-              Now applying AI and systems thinking to help mission-driven organizations convert 
-              complexity into strategic clarity.
+              25+ years leading enterprise technology — from Oracle's worldwide infrastructure to 
+              federal healthcare platforms serving 150 million Americans. I pair federal-grade 
+              compliance discipline (FedRAMP, FISMA, NIST 800-53) with production AI in operations, 
+              bringing regulated and commercial enterprises the rigor to run resilient systems at scale.
             </p>
             <div className="hero-actions">
               <a href="#connect" className="btn btn-primary">
-                <span>Start Conversation</span>
+                <span>Get in Touch</span>
                 <svg className="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                   <path d="M7 17L17 7M17 7H7M17 7V17" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </a>
-              <a href="#mission" className="btn btn-secondary">
-                <span>View Mission</span>
+              <a href="#cases" className="btn btn-secondary">
+                <span>View Case Studies</span>
               </a>
             </div>
           </div>
@@ -313,53 +313,52 @@ const IndexPage = () => {
         <div className="container">
           <div className="mission-content">
             <div className="section-header">
-              <span className="section-label">MISSION-DRIVEN LEADERSHIP</span>
-              <h2>Technology With Purpose</h2>
+              <span className="section-label">PROVEN IN HIGH-STAKES ENVIRONMENTS</span>
+              <h2>Built for Scale and Scrutiny</h2>
             </div>
             
             <div className="mission-grid">
               <div className="mission-card">
                 <div className="mission-icon">🏥</div>
-                <h3>Healthcare Access</h3>
+                <h3>Regulated, High-Availability Platforms</h3>
                 <p>
-                  Maintaining critical infrastructure for healthcare.gov, medicare.gov, 
-                  and cms.gov - ensuring millions can access essential services.
+                  Operated healthcare.gov, medicare.gov, and cms.gov — high-availability systems 
+                  under continuous compliance scrutiny, serving millions without interruption.
                 </p>
               </div>
               
               <div className="mission-card">
-                <div className="mission-icon">🚨</div>
-                <h3>Emergency Response</h3>
+                <div className="mission-icon">🛡️</div>
+                <h3>Resilience &amp; Continuity</h3>
                 <p>
-                  Developing relief logistics platforms and crisis response systems 
-                  that enable rapid, coordinated action when communities need it most.
+                  Built DR/BC and incident-command capability for systems where downtime carries real 
+                  consequences — the operational discipline regulated and commercial enterprises depend on.
                 </p>
               </div>
               
               <div className="mission-card">
-                <div className="mission-icon">🌍</div>
-                <h3>Community Resilience</h3>
+                <div className="mission-icon">🔗</div>
+                <h3>Multi-Vendor Orchestration</h3>
                 <p>
-                  Building technology that strengthens underserved communities, 
-                  from educational AI governance to digital response initiatives.
+                  Coordinated 10+ vendor organizations and $70M+ in annual contracts across complex 
+                  enterprise platforms — aligning delivery, cost, and accountability at scale.
                 </p>
               </div>
 
               <div className="mission-card">
-                <div className="mission-icon">📚</div>
-                <h3>Educational Access</h3>
+                <div className="mission-icon">🌐</div>
+                <h3>Global Enterprise Leadership</h3>
                 <p>
-                  For 20 years at Oracle, built global learning infrastructure enabling 
-                  thousands of students worldwide to access technical education - from 
-                  Oracle classrooms to community colleges to distance learning programs.
+                  Progressive scope across 22 years at Oracle leading distributed engineering teams 
+                  spanning the US, Europe, Asia, and the Americas — global infrastructure at enterprise scale.
                 </p>
               </div>
             </div>
 
             <div className="vision-statement">
               <blockquote>
-                "When it comes to data, complexity isn't the problem.
-                Clarity is."
+                "The systems that matter most are the ones that can't go down.
+                That's the standard I build to."
               </blockquote>
             </div>
           </div>
@@ -370,34 +369,33 @@ const IndexPage = () => {
       <section id="connect" className="connect-section">
         <div className="container">
           <div className="connect-content">
-            <h2>Let's Build Something That Matters</h2>
+            <h2>Open to Director &amp; VP Technology Roles</h2>
             <p>
-              Looking for an experienced technical leader who combines deep technical expertise with 
-              mission-driven leadership? Let's discuss how we can create 
-              resilient, impactful technology together.
+              I'm exploring senior technology leadership roles — Director and VP of IT Operations, 
+              Digital Transformation, and Technology — where federal-grade compliance discipline and 
+              production AI create durable advantage. Houston-based, open to remote.
             </p>
             
             <div className="connect-grid">
               <div className="connect-card">
-                <h3>Ideal Opportunities</h3>
+                <h3>Target Roles</h3>
                 <ul>
-                  <li>Nonprofit & NGO Leadership</li>
-                  <li>Civic Technology Initiatives</li>
-                  <li>Healthcare Technology Platforms</li>
-                  <li>Emergency Management Systems</li>
-                  <li>Clean Energy Infrastructure</li>
+                  <li>VP / Director, Technology</li>
+                  <li>Director, IT Operations</li>
+                  <li>Director, Digital Transformation</li>
+                  <li>Head of Technology Resilience</li>
+                  <li>FinTech · SaaS · Managed Services</li>
                 </ul>
               </div>
               
               <div className="connect-card">
                 <h3>Recent Engagements</h3>
                 <ul>
-                  <li>Legal Sector - MSP Strategic Selection</li>
-                  <li>CivicActions - DevOps Leadership</li>
-                  <li>US Digital Response - Workforce Assessment Automation</li>
-                  <li>Harris County DoE - AI Policy Development</li>
-                  <li>Federal Healthcare Platforms</li>
-                  <li>Relief Logistics Technology</li>
+                  <li>Legal Sector — MSP Strategic Selection</li>
+                  <li>Enterprise AI — Bedrock Workforce Intelligence</li>
+                  <li>Federal Healthcare Platforms — Operations at Scale</li>
+                  <li>Observability Transformation — Splunk ITSI, New Relic</li>
+                  <li>US Digital Response — Workforce Assessment Automation</li>
                 </ul>
               </div>
             </div>
@@ -422,12 +420,12 @@ const IndexPage = () => {
         <div className="container">
           <div className="footer-content">
             <div className="footer-left">
-              <span>© 2025 David Sumner</span>
+              <span>© 2026 David Sumner</span>
               <span className="footer-divider">•</span>
-              <span>Houston, TX</span>
+              <span>Houston, TX · Open to Remote</span>
             </div>
             <div className="footer-right">
-              <span>From Data to Decisions</span>
+              <span>Enterprise IT Operations · Resilience · AI</span>
             </div>
           </div>
         </div>
