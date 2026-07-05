@@ -29,8 +29,8 @@ const IndexPage = () => {
   const metrics = [
     { value: "99.9%", label: "System Uptime", detail: "Federal Healthcare Platforms" },
     { value: "25+", label: "Years Leading", detail: "Technology Transformation" },
-    { value: "40%", label: "Resilience Gain", detail: "Infrastructure Optimization" },
-    { value: "10+", label: "Vendor Partners", detail: "Strategic Coordination" }
+    { value: "$80M", label: "Contract Renewal", detail: "Cost Modeling & Bid Strategy" },
+    { value: "$500M", label: "Business Supported", detail: "Oracle Cloud Transformation" }
   ]
 
   const expertise = [
@@ -48,7 +48,7 @@ const IndexPage = () => {
     },
     {
       category: "Strategic Leadership",
-      items: ["Multi-Vendor Orchestration", "Digital Transformation", "MSP Selection & Strategy", "$80M+ Contract Management", "Organizational Resilience (DR/BC)", "Executive Stakeholder Alignment"]
+      items: ["Multi-Vendor Orchestration", "Digital Transformation", "MSP Selection & Strategy", "$80M+ Contract Management", "Utilization & Margin Management", "M&A Systems Integration", "Organizational Resilience (DR/BC)", "Executive Stakeholder Alignment"]
     }
   ]
 
@@ -84,19 +84,35 @@ const IndexPage = () => {
       ],
       tech: "Vendor Scoring Matrix · SOC 2 Verification · Risk Modeling · IT Governance · Transition Planning",
       theme: "The right decision needs more than a gut feeling. It needs a defendable framework that holds up to scrutiny."
+    },
+    {
+      id: "03",
+      label: "PLATFORM DEFENSE IN THE AI ERA",
+      client: "High-Traffic Federal Healthcare Platforms",
+      title: "Restoring SLA Uptime After an AI-Driven Traffic Surge",
+      challenge: "Over four months, total traffic across a portfolio of high-visibility public platforms climbed 40% with no corresponding growth in the populations they serve. The surge strained infrastructure and created significant performance impact. Traditional traffic metrics offered no explanation: request volumes were rising, but the users were not.",
+      approach: "Led the attribution analysis that traced nearly all of the growth to AI-driven scrapers and bots with constantly shifting behaviors. Built traffic throttling and malicious-request blocking tooling, coordinated WAF and caching rule changes with the CDN provider, and permanently restructured monitoring to segment automated traffic from legitimate human usage.",
+      outcome: "SLA uptime requirements were restored and have been maintained since, even as bot behaviors continue to evolve. The deeper change was to the operating model itself: performance measurement now begins with the question of who the traffic actually is, an assumption the AI era no longer allows operations teams to take for granted.",
+      metrics: [
+        { value: "40%", label: "Traffic Surge in Four Months" },
+        { value: "~100%", label: "Of Growth Attributed to Bots" },
+        { value: "SLA", label: "Uptime Restored & Maintained" }
+      ],
+      tech: "Akamai WAF · Traffic Attribution · Rate Limiting · New Relic · Grafana · Splunk",
+      theme: "In the AI era, you can't manage performance until you know who your traffic really is."
     }
   ]
 
   const currentWork = [
     {
       title: "Observability Transformation",
-      description: "Leading proactive monitoring strategy improvements for healthcare applications serving 150M Americans",
+      description: "Leading proactive monitoring strategy for healthcare platforms supporting programs that serve over 150M Americans, including traffic segmentation that separates AI-driven bots from legitimate usage",
       tech: "New Relic, Datadog, Splunk ITSI, Multi-Vendor Coordination"
     },
     {
       title: "AI Governance & Adoption",
-      description: "Designing AI evaluation, acquisition, and ethics frameworks for large public-sector and enterprise technology programs",
-      tech: "AI Strategy, Governance, Compliance"
+      description: "Designing AI evaluation, acquisition, and ethics frameworks for large public-sector and enterprise technology programs, including AI procurement curriculum developed and taught for the federal DITAP program",
+      tech: "AI Strategy, Governance, Compliance, Curriculum Design"
     },
     {
       title: "Infrastructure Modernization",
@@ -113,7 +129,7 @@ const IndexPage = () => {
   return (
     <>
       <Helmet>
-        <title>David Sumner — Technology Director | AI-Augmented IT Operations</title>
+        <title>David Sumner | Technology Director | AI-Augmented IT Operations</title>
         <meta name="description" content="IT Director | AI-Augmented Operations | FedRAMP & SOX-Grade Compliance" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
@@ -154,14 +170,14 @@ const IndexPage = () => {
             <div className="hero-badge">ENTERPRISE IT OPERATIONS · RESILIENCE · AI</div>
             <h1 className="hero-title">
               <span className="title-line">Enterprise IT Operations,</span>
-              <span className="title-line">Engineered for Resilience —</span>
+              <span className="title-line">Engineered for Resilience,</span>
               <span className="title-line accent">and Built with Production AI.</span>
             </h1>
             <p className="hero-description">
-              25+ years leading enterprise technology — from Oracle's worldwide infrastructure to 
-              federal healthcare platforms serving 150 million Americans. I pair federal-grade 
-              compliance discipline (FedRAMP, FISMA, NIST 800-53) with production AI in operations, 
-              bringing regulated and commercial enterprises the rigor to run resilient systems at scale.
+              Over 25 years leading enterprise technology, from Oracle's worldwide infrastructure to 
+              federal healthcare platforms supporting programs that serve over 150 million Americans. 
+              I pair regulated-industry compliance discipline (FedRAMP, FISMA, NIST 800-53) with 
+              production AI in operations, bringing enterprises the rigor to run resilient systems at scale.
             </p>
             <div className="hero-actions">
               <a href="#connect" className="btn btn-primary">
@@ -322,8 +338,9 @@ const IndexPage = () => {
                 <div className="mission-icon">🏥</div>
                 <h3>Regulated, High-Availability Platforms</h3>
                 <p>
-                  Operated healthcare.gov, medicare.gov, and cms.gov — high-availability systems 
-                  under continuous compliance scrutiny, serving millions without interruption.
+                  Operated healthcare.gov, medicare.gov, and cms.gov, high-availability systems 
+                  under continuous compliance scrutiny, while leading a 12-person DevOps practice 
+                  across a multi-project federal portfolio.
                 </p>
               </div>
               
@@ -332,7 +349,7 @@ const IndexPage = () => {
                 <h3>Resilience &amp; Continuity</h3>
                 <p>
                   Built DR/BC and incident-command capability for systems where downtime carries real 
-                  consequences — the operational discipline regulated and commercial enterprises depend on.
+                  consequences. This is the operational discipline regulated and commercial enterprises depend on.
                 </p>
               </div>
               
@@ -340,8 +357,9 @@ const IndexPage = () => {
                 <div className="mission-icon">🔗</div>
                 <h3>Multi-Vendor Orchestration</h3>
                 <p>
-                  Coordinated 10+ vendor organizations and $80M+ in annual contracts across complex 
-                  enterprise platforms — aligning delivery, cost, and accountability at scale.
+                  Coordinated 10+ vendor organizations across complex enterprise platforms, and built 
+                  the infrastructure and labor cost models behind an $80M contract renewal, aligning 
+                  delivery, cost, and accountability at scale.
                 </p>
               </div>
 
@@ -349,8 +367,11 @@ const IndexPage = () => {
                 <div className="mission-icon">🌐</div>
                 <h3>Global Enterprise Leadership</h3>
                 <p>
-                  Progressive scope two decades at Oracle leading distributed engineering teams 
-                  spanning the US, Europe, Asia, and the Americas — global infrastructure at enterprise scale.
+                  21 years at Oracle, growing from system administrator to cloud architect. Led the 
+                  migration of a $500M annual revenue training business serving 15,000+ students per week 
+                  to Oracle Cloud Infrastructure, consolidating support operations from roughly 200 staff 
+                  to 40, and integrated education operations from acquired companies including Sun 
+                  Microsystems, PeopleSoft, and JD Edwards.
                 </p>
               </div>
             </div>
@@ -371,9 +392,10 @@ const IndexPage = () => {
           <div className="connect-content">
             <h2>Open to Director &amp; VP Technology Roles</h2>
             <p>
-              I'm exploring senior technology leadership roles — Director and VP of IT Operations, 
-              Digital Transformation, and Technology — where federal-grade compliance discipline and 
-              production AI create durable advantage. Houston-based, open to remote.
+              I'm exploring senior technology leadership roles (Director and VP of IT Operations, 
+              Digital Transformation, and Technology) where regulated-industry compliance discipline and 
+              production AI create durable advantage, with particular interest in sectors undergoing 
+              rapid transformation such as energy. Houston-based, open to remote.
             </p>
             
             <div className="connect-grid">
@@ -384,18 +406,19 @@ const IndexPage = () => {
                   <li>Director, IT Operations</li>
                   <li>Director, Digital Transformation</li>
                   <li>Head of Technology Resilience</li>
-                  <li>FinTech · SaaS · Managed Services</li>
+                  <li>Energy · FinTech · SaaS · Managed Services</li>
                 </ul>
               </div>
               
               <div className="connect-card">
                 <h3>Recent Engagements</h3>
                 <ul>
-                  <li>Legal Sector — MSP Strategic Selection</li>
-                  <li>Enterprise AI — Bedrock Workforce Intelligence</li>
-                  <li>Federal Healthcare Platforms — Operations at Scale</li>
-                  <li>Observability Transformation — Splunk ITSI, New Relic</li>
-                  <li>US Digital Response — Workforce Assessment Automation</li>
+                  <li>AI Traffic Defense: SLA Recovery After a 40% Bot-Driven Surge</li>
+                  <li>Legal Sector: MSP Strategic Selection</li>
+                  <li>Enterprise AI: Bedrock Workforce Intelligence</li>
+                  <li>Federal Acquisition: AI Procurement Curriculum (DITAP)</li>
+                  <li>County Education Agency: AI Acceptable Use Policy</li>
+                  <li>US Digital Response: Workforce Assessment Automation</li>
                 </ul>
               </div>
             </div>
@@ -409,6 +432,9 @@ const IndexPage = () => {
               </a>
               <a href="https://linkedin.com/in/davidasumner" className="btn btn-secondary">
                 <span>LinkedIn Profile</span>
+              </a>
+              <a href="/David_Sumner_Resume.pdf" className="btn btn-secondary" download>
+                <span>Download Resume</span>
               </a>
             </div>
           </div>
