@@ -44,11 +44,11 @@ const IndexPage = () => {
     },
     {
       category: "Security & Compliance",
-      items: ["NIST 800-53 / FedRAMP / FISMA", "SOX-Equivalent Controls", "CISSP & CBCP Certified", "Cybersecurity Leadership"]
+      items: ["NIST 800-53 / FedRAMP / FISMA", "SOX-Equivalent Controls", "Cybersecurity Leadership"]
     },
     {
       category: "Strategic Leadership",
-      items: ["Multi-Vendor Orchestration", "Digital Transformation", "MSP Selection & Strategy", "$70M+ Contract Management", "Organizational Resilience (DR/BC)", "Executive Stakeholder Alignment"]
+      items: ["Multi-Vendor Orchestration", "Digital Transformation", "MSP Selection & Strategy", "$80M+ Contract Management", "Organizational Resilience (DR/BC)", "Executive Stakeholder Alignment"]
     }
   ]
 
@@ -114,7 +114,7 @@ const IndexPage = () => {
     <>
       <Helmet>
         <title>David Sumner — Technology Director | AI-Augmented IT Operations</title>
-        <meta name="description" content="IT Director | AI-Augmented Operations | FedRAMP & SOX-Grade Compliance | CISSP, CBCP" />
+        <meta name="description" content="IT Director | AI-Augmented Operations | FedRAMP & SOX-Grade Compliance" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -340,7 +340,7 @@ const IndexPage = () => {
                 <div className="mission-icon">🔗</div>
                 <h3>Multi-Vendor Orchestration</h3>
                 <p>
-                  Coordinated 10+ vendor organizations and $70M+ in annual contracts across complex 
+                  Coordinated 10+ vendor organizations and $80M+ in annual contracts across complex 
                   enterprise platforms — aligning delivery, cost, and accountability at scale.
                 </p>
               </div>
@@ -349,7 +349,7 @@ const IndexPage = () => {
                 <div className="mission-icon">🌐</div>
                 <h3>Global Enterprise Leadership</h3>
                 <p>
-                  Progressive scope across 22 years at Oracle leading distributed engineering teams 
+                  Progressive scope two decades at Oracle leading distributed engineering teams 
                   spanning the US, Europe, Asia, and the Americas — global infrastructure at enterprise scale.
                 </p>
               </div>
