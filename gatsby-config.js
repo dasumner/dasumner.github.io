@@ -3,8 +3,8 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Dave - Executive Technology Leadership`,
-    description: `CTO | DevOps Leader | Mission-Driven Technologist`,
+    title: `David Sumner - Technology Leader`,
+    description: `Senior Associate Director | Regulated Engineering Operations`,
     author: `Dave`,
     siteUrl: `https://dasumner.github.io`
   },
