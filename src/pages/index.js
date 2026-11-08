@@ -58,18 +58,20 @@ const IndexPage = () => {
       label: "WORKFORCE READINESS",
       client: "Major Municipal Housing Authority",
       title: "Turning a Decade of Inconsistent Job Descriptions Into a Living Skills Database",
-      challenge: "A large municipal housing agency had accumulated a large body of job descriptions authored by dozens of independent offices over more than a decade. The collection was a study in the agency's documentation processes over time. There were different terminologies, different skill frameworks and no shared taxonomy. With a major enterprise technology migration on the horizon, leadership had no reliable way to assess workforce readiness. The data existed. The insight did not.",
-      approach: "Designed and deployed an Amazon Bedrock pipeline that ingested the full corpus of job descriptions and applied large language models to extract, normalize, and cluster skills at scale. Disparate job titles, inconsistent competency language, and redundant role definitions were resolved into a unified, queryable skills database that captured technical and functional competencies across the organization.",
+      challenge: "A large municipal housing agency had accumulated more than 1,100 job descriptions authored by dozens of independent offices over more than a decade. The collection was a study in the agency's documentation processes over time. There were different terminologies, different skill frameworks and no shared taxonomy. With a major enterprise technology migration on the horizon, leadership had no reliable way to assess workforce readiness. The data existed. The insight did not.",
+      approach: "Designed and deployed an Amazon Bedrock pipeline that ingested the full corpus of 1,100+ job descriptions and applied large language models to extract, normalize, and cluster skills at scale. Disparate job titles, inconsistent competency language, and redundant role definitions were resolved into a unified, queryable skills database that captured technical and functional competencies across the organization.",
       outcome: "The resulting skills database gave agency leadership a clear, defensible picture of workforce readiness: which employees were prepared for the technology migration and which required targeted upskilling. What had been an information management problem became a strategic planning asset.",
-      metrics: [],
+      metrics: [
+        { value: "1,100+", label: "Job Descriptions Analyzed" }
+      ],
       tech: "Amazon Bedrock · LLM Extraction · Skills Ontology · Workforce Analytics"
     },
     {
       id: "02",
       label: "STRATEGIC VENDOR SELECTION",
-      client: "Multi-Office Law Firm (DC · NY · SF)",
+      client: "Multi-Office Firm (DC · NY · SF)",
       title: "Cutting Through MSP Proposals to Find the Right Technology Partner for a Law Firm",
-      challenge: "A small litigation firm operating across three major markets had outgrown its incumbent IT provider. The incumbent provider had a documented security failure and premium pricing. The firm needed to evaluate six competing managed service providers, but each proposal used different pricing structures, different SLA definitions, and different assumptions about scope. Comparing them directly was like comparing six different languages.",
+      challenge: "A multi-office litigation firm operating across three major markets had outgrown its incumbent IT provider. The incumbent provider had a documented security failure and premium pricing. The firm needed to evaluate six competing managed service providers, but each proposal used different pricing structures, different SLA definitions, and different assumptions about scope. Comparing them directly was like comparing six different languages.",
       approach: "Built a structured evaluation framework from the ground up: a weighted scoring matrix spanning security posture, unified communications, compliance readiness, service desk coverage, and total cost of ownership. Each vendor's proposal was normalized against the same criteria regardless of how they chose to present it. SOC 2 certifications were independently verified. Risk and cost tradeoffs were modeled visually so firm leadership could see where the gaps were, not just who scored highest, but why. Vendor write-ups were produced for each of the six finalists, and a full transition roadmap with IT recruitment advisory was delivered alongside.",
       outcome: "Two vendors emerged as clear finalists, differentiated not just on price but on security maturity and cultural fit for a firm operating in sensitive litigation environments. Leadership had a defensible, documented rationale for their selection. The engagement also surfaced an IT staffing gap the firm hadn't previously scoped, expanding the advisory into recruitment strategy.",
       metrics: [
@@ -107,19 +109,28 @@ const IndexPage = () => {
       title: "Infrastructure Modernization",
       description: "Leading container orchestration migration for enterprise CI/CD pipelines",
       tech: "Docker, Kubernetes, Jenkins"
-    },
-    {
-      title: "Strategic MSP Advisory",
-      description: "Evaluated 6 MSP proposals for a multi-office law firm (DC, NY, SF), normalizing complex bids and architecting the transition roadmap.",
-      tech: "Vendor Analysis, IT Governance, Multi-State Infrastructure"
-}
+    }
   ]
 
   return (
     <>
-      <Helmet>
-        <title>David Sumner | Technology Leader | Regulated Engineering Operations</title>
+      <Helmet htmlAttributes={{ lang: "en" }}>
+        <title>David Sumner | Senior Associate Director | Regulated Engineering Operations</title>
         <meta name="description" content="Senior Associate Director | Engineering Operations for Regulated, High-Availability Platforms | FedRAMP, FISMA & NIST 800-53" />
+        <link rel="canonical" href="https://dasumner.github.io/" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: "David Sumner",
+          jobTitle: "Senior Associate Director",
+          description: "Engineering operations leader for regulated, high-availability platforms (FedRAMP, FISMA, NIST 800-53).",
+          url: "https://dasumner.github.io/",
+          email: "mailto:iamdavesumner@proton.me",
+          address: { "@type": "PostalAddress", addressLocality: "Houston", addressRegion: "TX", addressCountry: "US" },
+          sameAs: ["https://linkedin.com/in/davidasumner"],
+          knowsAbout: ["DevSecOps", "Site Reliability Engineering", "FedRAMP", "FISMA", "NIST 800-53", "AWS", "Amazon Bedrock", "Disaster Recovery", "Incident Management"]
+        })}</script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet" />
