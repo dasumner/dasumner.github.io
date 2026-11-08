@@ -5,6 +5,14 @@ import "../styles/global.css"
 const IndexPage = () => {
   const [scrollY, setScrollY] = useState(0)
   const [activeSection, setActiveSection] = useState('hero')
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  useEffect(() => {
+    if (!menuOpen) return
+    const onKey = (e) => { if (e.key === 'Escape') setMenuOpen(false) }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [menuOpen])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -55,34 +63,6 @@ const IndexPage = () => {
   const caseStudies = [
     {
       id: "01",
-      label: "WORKFORCE READINESS",
-      client: "Major Municipal Housing Authority",
-      title: "Turning a Decade of Inconsistent Job Descriptions Into a Living Skills Database",
-      challenge: "A large municipal housing agency had accumulated more than 1,100 job descriptions authored by dozens of independent offices over more than a decade. The collection was a study in the agency's documentation processes over time. There were different terminologies, different skill frameworks and no shared taxonomy. With a major enterprise technology migration on the horizon, leadership had no reliable way to assess workforce readiness. The data existed. The insight did not.",
-      approach: "Designed and deployed an Amazon Bedrock pipeline that ingested the full corpus of 1,100+ job descriptions and applied large language models to extract, normalize, and cluster skills at scale. Disparate job titles, inconsistent competency language, and redundant role definitions were resolved into a unified, queryable skills database that captured technical and functional competencies across the organization.",
-      outcome: "The resulting skills database gave agency leadership a clear, defensible picture of workforce readiness: which employees were prepared for the technology migration and which required targeted upskilling. What had been an information management problem became a strategic planning asset.",
-      metrics: [
-        { value: "1,100+", label: "Job Descriptions Analyzed" }
-      ],
-      tech: "Amazon Bedrock · LLM Extraction · Skills Ontology · Workforce Analytics"
-    },
-    {
-      id: "02",
-      label: "STRATEGIC VENDOR SELECTION",
-      client: "Multi-Office Firm (DC · NY · SF)",
-      title: "Cutting Through MSP Proposals to Find the Right Technology Partner for a Law Firm",
-      challenge: "A multi-office litigation firm operating across three major markets had outgrown its incumbent IT provider. The incumbent provider had a documented security failure and premium pricing. The firm needed to evaluate six competing managed service providers, but each proposal used different pricing structures, different SLA definitions, and different assumptions about scope. Comparing them directly was like comparing six different languages.",
-      approach: "Built a structured evaluation framework from the ground up: a weighted scoring matrix spanning security posture, unified communications, compliance readiness, service desk coverage, and total cost of ownership. Each vendor's proposal was normalized against the same criteria regardless of how they chose to present it. SOC 2 certifications were independently verified. Risk and cost tradeoffs were modeled visually so firm leadership could see where the gaps were, not just who scored highest, but why. Vendor write-ups were produced for each of the six finalists, and a full transition roadmap with IT recruitment advisory was delivered alongside.",
-      outcome: "Two vendors emerged as clear finalists, differentiated not just on price but on security maturity and cultural fit for a firm operating in sensitive litigation environments. Leadership had a defensible, documented rationale for their selection. The engagement also surfaced an IT staffing gap the firm hadn't previously scoped, expanding the advisory into recruitment strategy.",
-      metrics: [
-        { value: "6", label: "Vendors Evaluated" },
-        { value: "3", label: "Markets (DC · NY · SF)" },
-        { value: "2", label: "Finalists Identified" }
-      ],
-      tech: "Vendor Scoring Matrix · SOC 2 Verification · Risk Modeling · IT Governance · Transition Planning"
-    },
-    {
-      id: "03",
       label: "PLATFORM DEFENSE IN THE AI ERA",
       client: "High-Traffic Federal Healthcare Platforms",
       title: "Restoring SLA Uptime After an AI-Driven Traffic Surge",
@@ -96,6 +76,34 @@ const IndexPage = () => {
       ],
       tech: "Akamai WAF · Traffic Attribution · Rate Limiting · New Relic · Grafana · Splunk",
       theme: "In the AI era, you can't manage performance until you know who your traffic really is."
+    },
+    {
+      id: "02",
+      label: "WORKFORCE READINESS",
+      client: "Major Municipal Housing Authority",
+      title: "Turning a Decade of Inconsistent Job Descriptions Into a Living Skills Database",
+      challenge: "A large municipal housing agency had accumulated more than 1,100 job descriptions authored by dozens of independent offices over more than a decade. The collection was a study in the agency's documentation processes over time. There were different terminologies, different skill frameworks and no shared taxonomy. With a major enterprise technology migration on the horizon, leadership had no reliable way to assess workforce readiness. The data existed. The insight did not.",
+      approach: "Designed and deployed an Amazon Bedrock pipeline that ingested the full corpus of 1,100+ job descriptions and applied large language models to extract, normalize, and cluster skills at scale. Disparate job titles, inconsistent competency language, and redundant role definitions were resolved into a unified, queryable skills database that captured technical and functional competencies across the organization.",
+      outcome: "The resulting skills database gave agency leadership a clear, defensible picture of workforce readiness: which employees were prepared for the technology migration and which required targeted upskilling. What had been an information management problem became a strategic planning asset.",
+      metrics: [
+        { value: "1,100+", label: "Job Descriptions Analyzed" }
+      ],
+      tech: "Amazon Bedrock · LLM Extraction · Skills Ontology · Workforce Analytics"
+    },
+    {
+      id: "03",
+      label: "STRATEGIC VENDOR SELECTION",
+      client: "Multi-Office Firm (DC · NY · SF)",
+      title: "Cutting Through MSP Proposals to Find the Right Technology Partner for a Law Firm",
+      challenge: "A multi-office litigation firm operating across three major markets had outgrown its incumbent IT provider. The incumbent provider had a documented security failure and premium pricing. The firm needed to evaluate six competing managed service providers, but each proposal used different pricing structures, different SLA definitions, and different assumptions about scope. Comparing them directly was like comparing six different languages.",
+      approach: "Built a structured evaluation framework from the ground up: a weighted scoring matrix spanning security posture, unified communications, compliance readiness, service desk coverage, and total cost of ownership. Each vendor's proposal was normalized against the same criteria regardless of how they chose to present it. SOC 2 certifications were independently verified. Risk and cost tradeoffs were modeled visually so firm leadership could see where the gaps were, not just who scored highest, but why. Vendor write-ups were produced for each of the six finalists, and a full transition roadmap with IT recruitment advisory was delivered alongside.",
+      outcome: "Two vendors emerged as clear finalists, differentiated not just on price but on security maturity and cultural fit for a firm operating in sensitive litigation environments. Leadership had a defensible, documented rationale for their selection. The engagement also surfaced an IT staffing gap the firm hadn't previously scoped, expanding the advisory into recruitment strategy.",
+      metrics: [
+        { value: "6", label: "Vendors Evaluated" },
+        { value: "3", label: "Markets (DC · NY · SF)" },
+        { value: "2", label: "Finalists Identified" }
+      ],
+      tech: "Vendor Scoring Matrix · SOC 2 Verification · Risk Modeling · IT Governance · Transition Planning"
     }
   ]
 
@@ -118,6 +126,22 @@ const IndexPage = () => {
         <title>David Sumner | Senior Associate Director | Regulated Engineering Operations</title>
         <meta name="description" content="Senior Associate Director | Engineering Operations for Regulated, High-Availability Platforms | FedRAMP, FISMA & NIST 800-53" />
         <link rel="canonical" href="https://dasumner.github.io/" />
+        <meta property="og:type" content="profile" />
+        <meta property="og:site_name" content="David Sumner" />
+        <meta property="og:url" content="https://dasumner.github.io/" />
+        <meta property="og:title" content="David Sumner | Senior Associate Director" />
+        <meta property="og:description" content="Engineering operations for regulated, high-availability platforms. FedRAMP, FISMA & NIST 800-53. Houston-based, open to remote." />
+        <meta property="og:image" content="https://dasumner.github.io/og-image.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="David Sumner, Senior Associate Director, Engineering Operations for Regulated, High-Availability Platforms" />
+        <meta property="profile:first_name" content="David" />
+        <meta property="profile:last_name" content="Sumner" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="David Sumner | Senior Associate Director" />
+        <meta name="twitter:description" content="Engineering operations for regulated, high-availability platforms. FedRAMP, FISMA & NIST 800-53." />
+        <meta name="twitter:image" content="https://dasumner.github.io/og-image.png" />
+        <meta name="twitter:image:alt" content="David Sumner, Senior Associate Director, Engineering Operations for Regulated, High-Availability Platforms" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
@@ -143,12 +167,25 @@ const IndexPage = () => {
             <span className="logo-text">DAVID</span>
             <span className="logo-subtitle">SUMNER</span>
           </div>
-          <div className="nav-links">
+          <button
+            type="button"
+            className={`nav-toggle${menuOpen ? ' open' : ''}`}
+            aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+            aria-expanded={menuOpen}
+            aria-controls="nav-links"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div id="nav-links" className={`nav-links${menuOpen ? ' open' : ''}`}>
             {['impact', 'expertise', 'cases', 'mission', 'connect'].map((section) => (
-              <a 
+              <a
                 key={section}
                 href={`#${section}`}
                 className={activeSection === section ? 'active' : ''}
+                onClick={() => setMenuOpen(false)}
               >
                 {section === 'cases' ? 'Case Studies' : section === 'mission' ? 'At Scale' : section.charAt(0).toUpperCase() + section.slice(1)}
               </a>
